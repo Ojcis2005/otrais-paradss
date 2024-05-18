@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body style="background-color:powderblue;"></body>
+  <head>
+    <title>Čats mums pašiem</title>
+    <meta charset="utf-8">
+    <script src="{{url_for('static', filename='chat.js')}}"></script>
+  </head>
+  <body onload="ieladetChatu()">
+    {% block chats%}
+    {%endblock%}
+  </body>
+</html>
